@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BlazeDemo - reserve</title>
+    <meta name="description" content="BlazeMeter demo app">
+    <meta name="sage" content="flights app">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/bootstrap-table.js"></script>
+    <link href="/assets/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/assets/bootstrap-table.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+        body {
+            background: #f5f5f5);
+        }
+
+        .hero-unit {
+            background-color: #fff;
+        }
+
+        .center {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index.php">Travel The World</a>
+                <a class="brand" href="home">home</a>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    
+        <h3>Flights from Paris to London: </h3>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Choose</th>
+            <th>Flight #</th>
+            <th>Airline</th>
+            <th>Departs: Paris</th>
+            <th>Arrives: London</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <form name="VA43" method="post" action="purchase.php">
+                <td><input type="submit" class="btn btn-small" value="Choose This Flight"></td>
+                <td>43</td>
+                <td>Virgin America</td>
+                <td>1:43 AM</td>
+                <td>9:45 PM</td>
+                <td>$472.56</td>
+                <input type="hidden" value="43" name="flight">
+                <input type="hidden" value="472.56" name="price">
+                <input type="hidden" value="Virgin America" name="airline">
+                <input type="hidden" name="fromPort" value="Paris"/>
+                <input type="hidden" name="toPort" value="London"/>
+            </form>
+        </tr>
+        <tr>
+            <form name="UA234" method="post" action="purchase.php">
+                <td><input type="submit" class="btn btn-small" value="Choose This Flight"></td>
+                <td>234</td>
+                <td>United Airlines</td>
+                <td>7:43 AM</td>
+                <td>10:45 PM</td>
+                <td>$432.98</td>
+                <input type="hidden" value="234" name="flight">
+                <input type="hidden" value="432.98" name="price">
+                <input type="hidden" value="United Airlines" name="airline">
+                <input type="hidden" name="fromPort" value="Paris"/>
+                <input type="hidden" name="toPort" value="London"/>
+            </form>
+        </tr>
+        <tr>
+            <form name="AL969" method="post" action="purchase.php">
+                <td><input type="submit" class="btn btn-small" value="Choose This Flight"></td>
+                <td>9696</td>
+                <td>Aer Lingus</td>
+                <td>5:27 AM</td>
+                <td>8:22 PM</td>
+                <td>$200.98</td>
+                <input type="hidden" value="9696" name="flight">
+                <input type="hidden" value="200.98" name="price">
+                <input type="hidden" value="Aer Lingus" name="airline">
+                <input type="hidden" name="fromPort" value="Paris"/>
+                <input type="hidden" name="toPort" value="London"/>
+            </form>
+
+        </tr>
+        <tr>
+            <form name="VA12" method="post" action="purchase.php">
+                <td><input type="submit" class="btn btn-small" value="Choose This Flight"></td>
+                <td>12</td>
+                <td>Virgin America</td>
+                <td>11:23 AM</td>
+                <td>1:45 PM</td>
+                <td>$765.32</td>
+                <input type="hidden" value="12" name="flight">
+                <input type="hidden" value="765.32" name="price">
+                <input type="hidden" value="Virgin America" name="airline">
+                <input type="hidden" name="fromPort" value="Paris"/>
+                <input type="hidden" name="toPort" value="London"/>
+            </form>
+        </tr>
+        <tr>
+            <form name="L4346" method="post" action="purchase.php">
+                <td><input type="submit" class="btn btn-small" value="Choose This Flight"></td>
+                <td>4346</td>
+                <td>Lufthansa</td>
+                <td>1:45 AM</td>
+                <td>8:34 PM</td>
+                <td>$233.98</td>
+                <input type="hidden" value="4346" name="flight">
+                <input type="hidden" value="233.98" name="price">
+                <input type="hidden" value="Lufthansa" name="airline">
+                <input type="hidden" name="fromPort" value="Paris"/>
+                <input type="hidden" name="toPort" value="London"/>
+            </form>
+        </tr>
+        </tbody>
+    </table>
+    <input type="hidden" name="fromPort" value="Paris"/>
+    <input type="hidden" name="toPort" value="London"/>
+    </div>
+</div>
+
+<!-- ProdPerfect script: last thing before the body closes -->
+<script>
+!function(name,path,ctx){
+    var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;latest=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=latest;ctx[name].ready(fn)};s.async=1;s.src=path;h.appendChild(s)}}
+  }('ProdPerfectKeen','https://blazemeter.trackinglibrary.prodperfect.com/keen-tracking.min.js',this);
+
+  ProdPerfectKeen.ready(function () {
+    var client = new ProdPerfectKeen({
+      projectId: "lXviifSA1NskA4wsG9N6WoWg",
+      writeKey: "8RWMCGFX4X0IRY1GHWDM3HM5WDSJF9LP62BSDULOL3XK7WAIFGDB7EU526O1A0UPLH1S8SJP320LUXJKCHLJX1822GU1KFE80CNW6PXVZ83IOO6LJ731EN164IFVUFMC8DOGYP2MXHN47WGVB192F2PTQRQXCF95OJWAKGOH9S69DZAI5OPJW8QSPDE6LQQ9",
+      requestType: "beacon",
+      host: "blazemeter.datapipe.prodperfect.com/v1",
+    });
+    client.extendEvents({
+      visitor: {
+        user_id: null,
+      },
+    });
+
+    var options = {
+      ignoreDisabledFormFields: false,
+      recordClicks: true,
+      recordFormSubmits: true,
+      recordInputChanges: true,
+      recordPageViews: true,
+      recordPageUnloads: true,
+      recordScrollState: true,
+    };
+    client.initAutoTracking(options);
+  });
+</script>
+</body>
+</html>

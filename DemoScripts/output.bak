@@ -1,0 +1,826 @@
+Virtual User Script started at: 21-02-2026 08:46:13
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (Jan 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\Anil\Documents\VuGen\Scripts\WebHttpHtml3\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(8): Notify: Transaction "01_Open_HomePage" started.
+Action.c(10): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(10): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(14): web_url("Open_HomePage") started  	[MsgId: MMSG-26355]
+Action.c(14): The request to server https://blazedemo.com/" is done with headers:
+Action.c(14):     :method = GET
+Action.c(14):     :scheme = https
+Action.c(14):     :path = /
+Action.c(14):     :authority = blazedemo.com
+Action.c(14):     User-Agent = Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+Action.c(14):     Accept-Encoding = gzip, deflate
+Action.c(14):     Accept = */*
+Action.c(14): t=1309ms: 317-byte response headers for "https://blazedemo.com/" (RelFrameId=1, Internal ID=1)
+Action.c(14):     HTTP/2.0 200\r\n
+Action.c(14):     Status: 200\r\n
+Action.c(14):     x-powered-by: PHP/7.4.30\r\n
+Action.c(14):     cache-control: no-cache, private\r\n
+Action.c(14):     vary: Accept-Encoding\r\n
+Action.c(14):     content-type: text/html; charset=UTF-8\r\n
+Action.c(14):     content-encoding: gzip\r\n
+Action.c(14):     x-cloud-trace-context: ab72ceff3da8490dbd4e0a0b05f79822\r\n
+Action.c(14):     date: Sat, 21 Feb 2026 03:16:14 GMT\r\n
+Action.c(14):     server: Google Frontend\r\n
+Action.c(14):     content-length: 1834\r\n
+Action.c(14):     \r\n
+Action.c(14): t=1342ms: 1398-byte ENCODED response body received for "https://blazedemo.com/" (RelFrameId=1, Internal ID=1)
+Action.c(14): t=1350ms: 3698-byte DECODED response body for "https://blazedemo.com/" (RelFrameId=1, Internal ID=1)
+Action.c(14):     <!doctype html>\n
+Action.c(14):     <html lang="en">\n
+Action.c(14):     <head>\n
+Action.c(14):         <meta charset="utf-8">\n
+Action.c(14):         <title> BlazeDemo</title>\n
+Action.c(14):         <meta name="description" content="BlazeMeter demo app">\n
+Action.c(14):         <meta name="sage" content="flights app">\n
+Action.c(14):     \n
+Action.c(14):         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script
+Action.c(14):     >\n
+Action.c(14):         <script src="/assets/bootstrap.min.js"></script>\n
+Action.c(14):         <script src="/assets/bootstrap-table.js"></script>\n
+Action.c(14):         <link href="/assets/bootstrap.min.css" rel="stylesheet" media="screen">\n
+Action.c(14):         <link href="/assets/bootstrap-table.css" rel="stylesheet" media="screen">\n
+Action.c(14):         <style type="text/css">\n
+Action.c(14):             body {\n
+Action.c(14):                 background: #f5f5f5);\n
+Action.c(14):             }\n
+Action.c(14):     \n
+Action.c(14):             .hero-unit {\n
+Action.c(14):                 background-color: #fff;\n
+Action.c(14):             }\n
+Action.c(14):     \n
+Action.c(14):             .center {\n
+Action.c(14):                 display: block;\n
+Action.c(14):                 margin: 0 auto;\n
+Action.c(14):             }\n
+Action.c(14):         </style>\n
+Action.c(14):     </head>\n
+Action.c(14):     <body>\n
+Action.c(14):             <div class="navbar navbar-inverse">\n
+Action.c(14):             <div class="navbar-inner">\n
+Action.c(14):                 <div class="container">\n
+Action.c(14):                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collaps
+Action.c(14):     e">\n
+Action.c(14):                         <span class="icon-bar"></span>\n
+Action.c(14):                         <span class="icon-bar"></span>\n
+Action.c(14):                         <span class="icon-bar"></span>\n
+Action.c(14):                     </a>\n
+Action.c(14):                     <a class="brand" href="index.php">Travel The World</a>\n
+Action.c(14):                     <a class="brand" href="home">home</a>\n
+Action.c(14):                 </div>\n
+Action.c(14):             </div>\n
+Action.c(14):         </div>\n
+Action.c(14):     \n
+Action.c(14):         <div class="jumbotron">\n
+Action.c(14):             <div class="container">\n
+Action.c(14):                 <h1>Welcome to the Simple Travel Agency!</h1>\n
+Action.c(14):                 <p>The is a sample site you can test with BlazeMeter! </p>\n
+Action.c(14):                 <p>Check out our <a href="vacation.html">destination of the week! The Beach!</
+Action.c(14):     a></p>\n
+Action.c(14):             </div>\n
+Action.c(14):         </div>\n
+Action.c(14):     <div class="container">\n
+Action.c(14):             <h2>Choose your departure city:</h2>\n
+Action.c(14):         <form action="reserve.php" method="post">\n
+Action.c(14):             <select name="fromPort" class="form-inline">\n
+Action.c(14):                 <option value="Paris">Paris</option>\n
+Action.c(14):                 <option value="Philadelphia">Philadelphia</option>\n
+Action.c(14):                 <option value="Boston">Boston</option>\n
+Action.c(14):                 <option value="Portland">Portland</option>\n
+Action.c(14):                 <option value="San Diego">San Diego</option>\n
+Action.c(14):                 <option value="Mexico City">Mexico City</option>\n
+Action.c(14):                 <option value="S\xC3\xA3o Paolo">S\xC3\xA3o Paolo</option>\n
+Action.c(14):             </select>\n
+Action.c(14):             <p>\n
+Action.c(14):             <h2>Choose your destination city:</h2>\n
+Action.c(14):             <select name="toPort" class="form-inline">\n
+Action.c(14):                 <option value="Buenos Aires">Buenos Aires</option>\n
+Action.c(14):                 <option value="Rome">Rome</option>\n
+Action.c(14):                 <option value="London">London</option>\n
+Action.c(14):                 <option value="Berlin">Berlin</option>\n
+Action.c(14):                 <option value="New York">New York</option>\n
+Action.c(14):                 <option value="Dublin">Dublin</option>\n
+Action.c(14):                 <option value="Cairo">Cairo</option>\n
+Action.c(14):             </select>\n
+Action.c(14):             <p></p>\n
+Action.c(14):             <div class="container">\n
+Action.c(14):                 <input type="submit" class="btn btn-primary" value="Find Flights"/>\n
+Action.c(14):             </div>\n
+Action.c(14):         </form>\n
+Action.c(14):     </div>\n
+Action.c(14):     \n
+Action.c(14):     <!-- ProdPerfect script: last thing before the body closes -->\n
+Action.c(14):     <script>\n
+Action.c(14):     !function(name,path,ctx){\n
+Action.c(14):         var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{rea
+Action.c(14):     dy:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('s
+Action.c(14):     cript'),w=window,loaded;s.onload=s.onreadystatechange=function(){if((s.readyState&&!(/^c|l
+Action.c(14):     oade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;lat
+Action.c(14):     est=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=l
+Action.c(14):     atest;ctx[name].ready(fn)};s.async=1;s.src=path;h.appendChild(s)}}\n
+Action.c(14):       }('ProdPerfectKeen','https://blazemeter.trackinglibrary.prodperfect.com/keen-tracking.mi
+Action.c(14):     n.js',this);\n
+Action.c(14):     \n
+Action.c(14):       ProdPerfectKeen.ready(function () {\n
+Action.c(14):         var cli
+Action.c(14): t=1363ms: 436-byte ENCODED response body received for "https://blazedemo.com/" (RelFrameId=1, Internal ID=1)
+Action.c(14): t=1364ms: 776-byte DECODED response body for "https://blazedemo.com/" (RelFrameId=1, Internal ID=1)
+Action.c(14):     ent = new ProdPerfectKeen({\n
+Action.c(14):           projectId: "lXviifSA1NskA4wsG9N6WoWg",\n
+Action.c(14):           writeKey: "8RWMCGFX4X0IRY1GHWDM3HM5WDSJF9LP62BSDULOL3XK7WAIFGDB7EU526O1A0UPLH1S8SJP3
+Action.c(14):     20LUXJKCHLJX1822GU1KFE80CNW6PXVZ83IOO6LJ731EN164IFVUFMC8DOGYP2MXHN47WGVB192F2PTQRQXCF95OJW
+Action.c(14):     AKGOH9S69DZAI5OPJW8QSPDE6LQQ9",\n
+Action.c(14):           requestType: "beacon",\n
+Action.c(14):           host: "blazemeter.datapipe.prodperfect.com/v1",\n
+Action.c(14):         });\n
+Action.c(14):         client.extendEvents({\n
+Action.c(14):           visitor: {\n
+Action.c(14):             user_id: null,\n
+Action.c(14):           },\n
+Action.c(14):         });\n
+Action.c(14):     \n
+Action.c(14):         var options = {\n
+Action.c(14):           ignoreDisabledFormFields: false,\n
+Action.c(14):           recordClicks: true,\n
+Action.c(14):           recordFormSubmits: true,\n
+Action.c(14):           recordInputChanges: true,\n
+Action.c(14):           recordPageViews: true,\n
+Action.c(14):           recordPageUnloads: true,\n
+Action.c(14):           recordScrollState: true,\n
+Action.c(14):         };\n
+Action.c(14):         client.initAutoTracking(options);\n
+Action.c(14):       });\n
+Action.c(14):     </script>\n
+Action.c(14):     </body>\n
+Action.c(14):     </html>\n
+Action.c(14): Registered web_reg_find successful for "Text=Welcome to the Simple Travel Agency!" (count=1)  	[MsgId: MMSG-26364]
+Action.c(14): Notify: Saving Parameter "HomePageCheck = 1".
+Action.c(14): web_url("Open_HomePage") was successful, 1834 body bytes, 317 header bytes  	[MsgId: MMSG-26386]
+Action.c(21): Notify: Parameter Substitution: parameter "HomePageCheck" =  "1"
+Action.c(22): Notify: Transaction "01_Open_HomePage" ended with a "Pass" status (Duration: 1.1718 Wasted Time: 0.1443).
+Action.c(33): Notify: Transaction "02_Find_Flights" started.
+Action.c(35): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(35): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(39): web_submit_data("Find_Flights") started  	[MsgId: MMSG-26355]
+Action.c(39): The request to server https://blazedemo.com/reserve.php" is done with headers:
+Action.c(39):     :method = POST
+Action.c(39):     :scheme = https
+Action.c(39):     :path = /reserve.php
+Action.c(39):     :authority = blazedemo.com
+Action.c(39):     Content-Type = application/x-www-form-urlencoded
+Action.c(39):     Cache-Control = no-cache
+Action.c(39):     Referer = https://blazedemo.com/
+Action.c(39):     User-Agent = Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+Action.c(39):     Accept-Encoding = gzip, deflate
+Action.c(39):     Accept = */*
+Action.c(39):     content-length = 28
+Action.c(39): t=2123ms: 317-byte response headers for "https://blazedemo.com/reserve.php" (RelFrameId=1, Internal ID=2)
+Action.c(39):     HTTP/2.0 200\r\n
+Action.c(39):     Status: 200\r\n
+Action.c(39):     x-powered-by: PHP/7.4.30\r\n
+Action.c(39):     cache-control: no-cache, private\r\n
+Action.c(39):     vary: Accept-Encoding\r\n
+Action.c(39):     content-type: text/html; charset=UTF-8\r\n
+Action.c(39):     content-encoding: gzip\r\n
+Action.c(39):     x-cloud-trace-context: cf67713efa7d0680bd4e0a0b05f79b90\r\n
+Action.c(39):     date: Sat, 21 Feb 2026 03:16:15 GMT\r\n
+Action.c(39):     server: Google Frontend\r\n
+Action.c(39):     content-length: 1911\r\n
+Action.c(39):     \r\n
+Action.c(39): t=2126ms: 1398-byte ENCODED response body received for "https://blazedemo.com/reserve.php" (RelFrameId=1, Internal ID=2)
+Action.c(39): t=2127ms: 6114-byte DECODED response body for "https://blazedemo.com/reserve.php" (RelFrameId=1, Internal ID=2)
+Action.c(39):     <!doctype html>\n
+Action.c(39):     <html lang="en">\n
+Action.c(39):     <head>\n
+Action.c(39):         <meta charset="utf-8">\n
+Action.c(39):         <title>BlazeDemo - reserve</title>\n
+Action.c(39):         <meta name="description" content="BlazeMeter demo app">\n
+Action.c(39):         <meta name="sage" content="flights app">\n
+Action.c(39):     \n
+Action.c(39):         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script
+Action.c(39):     >\n
+Action.c(39):         <script src="/assets/bootstrap.min.js"></script>\n
+Action.c(39):         <script src="/assets/bootstrap-table.js"></script>\n
+Action.c(39):         <link href="/assets/bootstrap.min.css" rel="stylesheet" media="screen">\n
+Action.c(39):         <link href="/assets/bootstrap-table.css" rel="stylesheet" media="screen">\n
+Action.c(39):         <style type="text/css">\n
+Action.c(39):             body {\n
+Action.c(39):                 background: #f5f5f5);\n
+Action.c(39):             }\n
+Action.c(39):     \n
+Action.c(39):             .hero-unit {\n
+Action.c(39):                 background-color: #fff;\n
+Action.c(39):             }\n
+Action.c(39):     \n
+Action.c(39):             .center {\n
+Action.c(39):                 display: block;\n
+Action.c(39):                 margin: 0 auto;\n
+Action.c(39):             }\n
+Action.c(39):         </style>\n
+Action.c(39):     </head>\n
+Action.c(39):     <body>\n
+Action.c(39):         <div class="navbar navbar-inverse">\n
+Action.c(39):             <div class="navbar-inner">\n
+Action.c(39):                 <div class="container">\n
+Action.c(39):                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collaps
+Action.c(39):     e">\n
+Action.c(39):                         <span class="icon-bar"></span>\n
+Action.c(39):                         <span class="icon-bar"></span>\n
+Action.c(39):                         <span class="icon-bar"></span>\n
+Action.c(39):                     </a>\n
+Action.c(39):                     <a class="brand" href="index.php">Travel The World</a>\n
+Action.c(39):                     <a class="brand" href="home">home</a>\n
+Action.c(39):                 </div>\n
+Action.c(39):             </div>\n
+Action.c(39):         </div>\n
+Action.c(39):     <div class="container">\n
+Action.c(39):         \n
+Action.c(39):             <h3>Flights from Paris to London: </h3>\n
+Action.c(39):         <table class="table">\n
+Action.c(39):             <thead>\n
+Action.c(39):             <tr>\n
+Action.c(39):                 <th>Choose</th>\n
+Action.c(39):                 <th>Flight #</th>\n
+Action.c(39):                 <th>Airline</th>\n
+Action.c(39):                 <th>Departs: Paris</th>\n
+Action.c(39):                 <th>Arrives: London</th>\n
+Action.c(39):                 <th>Price</th>\n
+Action.c(39):             </tr>\n
+Action.c(39):             </thead>\n
+Action.c(39):             <tbody>\n
+Action.c(39):             <tr>\n
+Action.c(39):                 <form name="VA43" method="post" action="purchase.php">\n
+Action.c(39):                     <td><input type="submit" class="btn btn-small" value="Choose This Flight">
+Action.c(39):     </td>\n
+Action.c(39):                     <td>43</td>\n
+Action.c(39):                     <td>Virgin America</td>\n
+Action.c(39):                     <td>1:43 AM</td>\n
+Action.c(39):                     <td>9:45 PM</td>\n
+Action.c(39):                     <td>$472.56</td>\n
+Action.c(39):                     <input type="hidden" value="43" name="flight">\n
+Action.c(39):                     <input type="hidden" value="472.56" name="price">\n
+Action.c(39):                     <input type="hidden" value="Virgin America" name="airline">\n
+Action.c(39):                     <input type="hidden" name="fromPort" value="Paris"/>\n
+Action.c(39):                     <input type="hidden" name="toPort" value="London"/>\n
+Action.c(39):                 </form>\n
+Action.c(39):             </tr>\n
+Action.c(39):             <tr>\n
+Action.c(39):                 <form name="UA234" method="post" action="purchase.php">\n
+Action.c(39):                     <td><input type="submit" class="btn btn-small" value="Choose This Flight">
+Action.c(39):     </td>\n
+Action.c(39):                     <td>234</td>\n
+Action.c(39):                     <td>United Airlines</td>\n
+Action.c(39):                     <td>7:43 AM</td>\n
+Action.c(39):                     <td>10:45 PM</td>\n
+Action.c(39):                     <td>$432.98</td>\n
+Action.c(39):                     <input type="hidden" value="234" name="flight">\n
+Action.c(39):                     <input type="hidden" value="432.98" name="price">\n
+Action.c(39):                     <input type="hidden" value="United Airlines" name="airline">\n
+Action.c(39):                     <input type="hidden" name="fromPort" value="Paris"/>\n
+Action.c(39):                     <input type="hidden" name="toPort" value="London"/>\n
+Action.c(39):                 </form>\n
+Action.c(39):             </tr>\n
+Action.c(39):             <tr>\n
+Action.c(39):                 <form name="AL969" method="post" action="purchase.php">\n
+Action.c(39):                     <td><input type="submit" class="btn btn-small" value="Choose This Flight">
+Action.c(39):     </td>\n
+Action.c(39):                     <td>9696</td>\n
+Action.c(39):                     <td>Aer Lingus</td>\n
+Action.c(39):                     <td>5:27 AM</td>\n
+Action.c(39):                     <td>8:22 PM</td>\n
+Action.c(39):                     <td>$200.98</td>\n
+Action.c(39):                     <input type="hidden" value="9696" name="flight">\n
+Action.c(39):                     <input type="hidden" value="200.98" name="price">\n
+Action.c(39):                     <input type="hidden" value="Aer Lingus" name="airline">\n
+Action.c(39):                     <input type="hidden" name="fromPort" value="Paris"/>\n
+Action.c(39):                     <input type="hidden" name="toPort" value="London"/>\n
+Action.c(39):                 </form>\n
+Action.c(39):     \n
+Action.c(39):             </tr>\n
+Action.c(39):             <tr>\n
+Action.c(39):                 <form name="VA12" method="post" action="purchase.php">\n
+Action.c(39):                     <td><input type="submit" class="btn btn-small" value="Choose This Flight">
+Action.c(39):     </td>\n
+Action.c(39):                     <td>12</td>\n
+Action.c(39):                     <td>Virgin America</td>\n
+Action.c(39):                     <td>11:23 AM</td>\n
+Action.c(39):                     <td>1:45 PM</td>\n
+Action.c(39):                     <td>$765.32</td>\n
+Action.c(39):                     <input type="hidden" value="12" name="flight">\n
+Action.c(39):                     <input type="hidden" value="765.32" name="price">\n
+Action.c(39):                     <input type="hidden" value="Virgin America" name="airline">\n
+Action.c(39):                     <input type="hidden" name="fromPort" value="Paris"/>\n
+Action.c(39):                     <input type="hidden" name="toPort" value="London"/>\n
+Action.c(39):                 </form>\n
+Action.c(39):             </tr>\n
+Action.c(39):             <tr>\n
+Action.c(39):                 <form name="L4346" method="post" action="purchase.php">\n
+Action.c(39):                     <td><input type="submit" class="btn btn-small" value="Choose This Flight">
+Action.c(39):     </td>\n
+Action.c(39):                     <td>4346</td>\n
+Action.c(39):                     <td>Lufthansa</td>\n
+Action.c(39):                     <td>1:45 AM</td>\n
+Action.c(39):                     <td>8:34 PM</td>\n
+Action.c(39):                     <td>$233.98</td>\n
+Action.c(39):                     <input type="hidden" value="4346" name="flight">\n
+Action.c(39):                     <input type="hidden" value="233.98" name="price">\n
+Action.c(39):                     <input type="hidden" value="Lufthansa" name="airline">\n
+Action.c(39):                     <input type="hidden" name="fromPort" value="Paris"/>\n
+Action.c(39):                     <input type="hidden" name="toPort" value="London"/>\n
+Action.c(39):                 </form>\n
+Action.c(39):             </tr>\n
+Action.c(39):             </tbody>\n
+Action.c(39):         </table>\n
+Action.c(39):         <input type="hidden" name="fromPort" value="Paris"/>\n
+Action.c(39):         <input type="hidden" name="toPort" value="London"/>\n
+Action.c(39):         </div>\n
+Action.c(39):     </div>\n
+Action.c(39):     \n
+Action.c(39):     <!-- ProdPerfect script: last thing before the body closes -->\n
+Action.c(39):     <script>\n
+Action.c(39):     !function(name,path,ctx){\n
+Action.c(39):         var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{rea
+Action.c(39):     dy:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('s
+Action.c(39):     cript'),w=window,loaded;s.onload=s.onreadystatechange=function(){if((s.readyState&&!(/^c|l
+Action.c(39):     oade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;lat
+Action.c(39):     est=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=l
+Action.c(39):     atest;ctx[name].ready(fn)};s.async=1;s.src=path;h.appendChil
+Action.c(39): t=2143ms: 513-byte ENCODED response body received for "https://blazedemo.com/reserve.php" (RelFrameId=1, Internal ID=2)
+Action.c(39): t=2144ms: 936-byte DECODED response body for "https://blazedemo.com/reserve.php" (RelFrameId=1, Internal ID=2)
+Action.c(39):     d(s)}}\n
+Action.c(39):       }('ProdPerfectKeen','https://blazemeter.trackinglibrary.prodperfect.com/keen-tracking.mi
+Action.c(39):     n.js',this);\n
+Action.c(39):     \n
+Action.c(39):       ProdPerfectKeen.ready(function () {\n
+Action.c(39):         var client = new ProdPerfectKeen({\n
+Action.c(39):           projectId: "lXviifSA1NskA4wsG9N6WoWg",\n
+Action.c(39):           writeKey: "8RWMCGFX4X0IRY1GHWDM3HM5WDSJF9LP62BSDULOL3XK7WAIFGDB7EU526O1A0UPLH1S8SJP3
+Action.c(39):     20LUXJKCHLJX1822GU1KFE80CNW6PXVZ83IOO6LJ731EN164IFVUFMC8DOGYP2MXHN47WGVB192F2PTQRQXCF95OJW
+Action.c(39):     AKGOH9S69DZAI5OPJW8QSPDE6LQQ9",\n
+Action.c(39):           requestType: "beacon",\n
+Action.c(39):           host: "blazemeter.datapipe.prodperfect.com/v1",\n
+Action.c(39):         });\n
+Action.c(39):         client.extendEvents({\n
+Action.c(39):           visitor: {\n
+Action.c(39):             user_id: null,\n
+Action.c(39):           },\n
+Action.c(39):         });\n
+Action.c(39):     \n
+Action.c(39):         var options = {\n
+Action.c(39):           ignoreDisabledFormFields: false,\n
+Action.c(39):           recordClicks: true,\n
+Action.c(39):           recordFormSubmits: true,\n
+Action.c(39):           recordInputChanges: true,\n
+Action.c(39):           recordPageViews: true,\n
+Action.c(39):           recordPageUnloads: true,\n
+Action.c(39):           recordScrollState: true,\n
+Action.c(39):         };\n
+Action.c(39):         client.initAutoTracking(options);\n
+Action.c(39):       });\n
+Action.c(39):     </script>\n
+Action.c(39):     </body>\n
+Action.c(39):     </html>\n
+Action.c(39): Registered web_reg_find successful for "Text=Flights from" (count=1)  	[MsgId: MMSG-26364]
+Action.c(39): Notify: Saving Parameter "FindFlightCheck = 1".
+Action.c(39): web_submit_data("Find_Flights") was successful, 1911 body bytes, 317 header bytes  	[MsgId: MMSG-26386]
+Action.c(49): Notify: Parameter Substitution: parameter "FindFlightCheck" =  "1"
+Action.c(50): Notify: Transaction "02_Find_Flights" ended with a "Pass" status (Duration: 0.6413 Wasted Time: 0.0127).
+Action.c(67): Notify: Transaction "03_Choose_Flight" started.
+Action.c(69): web_submit_data("Choose_Flight") started  	[MsgId: MMSG-26355]
+Action.c(69): The request to server https://blazedemo.com/purchase.php" is done with headers:
+Action.c(69):     :method = POST
+Action.c(69):     :scheme = https
+Action.c(69):     :path = /purchase.php
+Action.c(69):     :authority = blazedemo.com
+Action.c(69):     Content-Type = application/x-www-form-urlencoded
+Action.c(69):     Cache-Control = no-cache
+Action.c(69):     Referer = https://blazedemo.com/reserve.php
+Action.c(69):     User-Agent = Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+Action.c(69):     Accept-Encoding = gzip, deflate
+Action.c(69):     Accept = */*
+Action.c(69):     content-length = 9
+Action.c(69): t=2737ms: 317-byte response headers for "https://blazedemo.com/purchase.php" (RelFrameId=1, Internal ID=3)
+Action.c(69):     HTTP/2.0 200\r\n
+Action.c(69):     Status: 200\r\n
+Action.c(69):     x-powered-by: PHP/7.4.30\r\n
+Action.c(69):     cache-control: no-cache, private\r\n
+Action.c(69):     vary: Accept-Encoding\r\n
+Action.c(69):     content-type: text/html; charset=UTF-8\r\n
+Action.c(69):     content-encoding: gzip\r\n
+Action.c(69):     x-cloud-trace-context: 842cbaf15a1dd71abd4e0a0b05f791a2\r\n
+Action.c(69):     date: Sat, 21 Feb 2026 03:16:15 GMT\r\n
+Action.c(69):     server: Google Frontend\r\n
+Action.c(69):     content-length: 2115\r\n
+Action.c(69):     \r\n
+Action.c(69): t=2767ms: 1398-byte ENCODED response body received for "https://blazedemo.com/purchase.php" (RelFrameId=1, Internal ID=3)
+Action.c(69): t=2768ms: 5076-byte DECODED response body for "https://blazedemo.com/purchase.php" (RelFrameId=1, Internal ID=3)
+Action.c(69):     <!doctype html>\n
+Action.c(69):     <html lang="en">\n
+Action.c(69):     <head>\n
+Action.c(69):         <meta charset="utf-8">\n
+Action.c(69):         <title>BlazeDemo Purchase</title>\n
+Action.c(69):         <meta name="description" content="BlazeMeter demo app">\n
+Action.c(69):         <meta name="sage" content="flights app">\n
+Action.c(69):     \n
+Action.c(69):         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script
+Action.c(69):     >\n
+Action.c(69):         <script src="/assets/bootstrap.min.js"></script>\n
+Action.c(69):         <script src="/assets/bootstrap-table.js"></script>\n
+Action.c(69):         <link href="/assets/bootstrap.min.css" rel="stylesheet" media="screen">\n
+Action.c(69):         <link href="/assets/bootstrap-table.css" rel="stylesheet" media="screen">\n
+Action.c(69):         <style type="text/css">\n
+Action.c(69):             body {\n
+Action.c(69):                 background: #f5f5f5);\n
+Action.c(69):             }\n
+Action.c(69):     \n
+Action.c(69):             .hero-unit {\n
+Action.c(69):                 background-color: #fff;\n
+Action.c(69):             }\n
+Action.c(69):     \n
+Action.c(69):             .center {\n
+Action.c(69):                 display: block;\n
+Action.c(69):                 margin: 0 auto;\n
+Action.c(69):             }\n
+Action.c(69):         </style>\n
+Action.c(69):     </head>\n
+Action.c(69):     <body>\n
+Action.c(69):         <div class="navbar navbar-inverse">\n
+Action.c(69):             <div class="navbar-inner">\n
+Action.c(69):                 <div class="container">\n
+Action.c(69):                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collaps
+Action.c(69):     e">\n
+Action.c(69):                         <span class="icon-bar"></span>\n
+Action.c(69):                         <span class="icon-bar"></span>\n
+Action.c(69):                         <span class="icon-bar"></span>\n
+Action.c(69):                     </a>\n
+Action.c(69):                     <a class="brand" href="index.php">Travel The World</a>\n
+Action.c(69):                     <a class="brand" href="home">home</a>\n
+Action.c(69):                 </div>\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):     <div class="container">\n
+Action.c(69):                 <h2>Your flight from TLV to SFO has been reserved.</h2>\n
+Action.c(69):         <p>Airline: United</p>\n
+Action.c(69):         <p>Flight Number: UA954</p>\n
+Action.c(69):         <p>Price: 400</p>\n
+Action.c(69):         <p>Arbitrary Fees and Taxes: 514.76</p>\n
+Action.c(69):         <hr></hr>\n
+Action.c(69):         <p>Total Cost: <em>914.76 </em></p>\n
+Action.c(69):         <p>Please submit the form below to purchase the flight.</p>\n
+Action.c(69):     \n
+Action.c(69):         <form method="POST" action="https://blazedemo.com/confirmation.php" accept-charset="UT
+Action.c(69):     F-8"><input name="_token" type="hidden">\n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <label class="control-label" for="inputName">Name</label>\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <input id="inputName" placeholder="First Last" name="inputName" type="text">\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <label class="control-label" for="address">Address</label>\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <input type="text" name="address" id="address" placeholder="123 Main St.">\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <label class="control-label" for="city">City</label>\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <input type="text" name="city" id="city" placeholder="Anytown">\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <label class="control-label" for="state">State</label>\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <input type="text" name="state" id="state" placeholder="State">\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <label class="control-label" for="zipCode">Zip Code</label>\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <input type="text" name="zipCode" id="zipCode" placeholder="12345">\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):     \n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <label class="control-label" for="creditCardType">Card Type</label>\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <select class="form-inline" name="cardType" id="cardType">\n
+Action.c(69):                     <option value="visa">Visa</option>\n
+Action.c(69):                     <option value="amex">American Express</option>\n
+Action.c(69):                     <option value="dinersclub">Diner's Club</option>\n
+Action.c(69):                 </select>\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):     \n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <label class="control-label" for="creditCardNumber">Credit Card Number</label>\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <input type="text" id="creditCardNumber" name="creditCardNumber" placeholder="
+Action.c(69):     Credit Card Number">\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):     \n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <label class="control-label" for="creditCardMonth">Month</label>\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <input type="text" id="creditCardMonth" name="creditCardMonth" placeholder="Mo
+Action.c(69):     nth" value="11">\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):     \n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <label class="control-label" for="creditCardYear">Year</label>\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <input type="text" id="creditCardYear" name="creditCardYear" placeholder="Year
+Action.c(69):     " value="2017">\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):     \n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <label class="control-label" for="nameOnCard">Name on Card</label>\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <input type="text" id="nameOnCard" placeholder="John Smith" name="nameOnCard">
+Action.c(69):     \n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):     \n
+Action.c(69):     \n
+Action.c(69):         <div class="control-group">\n
+Action.c(69):             <div class="controls">\n
+Action.c(69):                 <label class="checkbox">\n
+Action.c(69):                     <input type="checkbox" name="rememberMe" id="rememberMe"> Remember me\n
+Action.c(69):                 </label>\n
+Action.c(69):                 <input class="btn btn-primary" type="submit" value="Purchase Flight">\n
+Action.c(69):             </div>\n
+Action.c(69):         </div>\n
+Action.c(69):         </form>\n
+Action.c(69):         \n
+Action.c(69):     </div>\n
+Action.c(69):     \n
+Action.c(69):     <!-- ProdPerfect script: last thing before the body closes -->\n
+Action.c(69):     <script>\n
+Action.c(69):     !function(name,path,ctx){\n
+Action.c(69):         var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{rea
+Action.c(69): t=2788ms: 717-byte ENCODED response body received for "https://blazedemo.com/purchase.php" (RelFrameId=1, Internal ID=3)
+Action.c(69): t=2789ms: 1356-byte DECODED response body for "https://blazedemo.com/purchase.php" (RelFrameId=1, Internal ID=3)
+Action.c(69):     dy:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('s
+Action.c(69):     cript'),w=window,loaded;s.onload=s.onreadystatechange=function(){if((s.readyState&&!(/^c|l
+Action.c(69):     oade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;lat
+Action.c(69):     est=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=l
+Action.c(69):     atest;ctx[name].ready(fn)};s.async=1;s.src=path;h.appendChild(s)}}\n
+Action.c(69):       }('ProdPerfectKeen','https://blazemeter.trackinglibrary.prodperfect.com/keen-tracking.mi
+Action.c(69):     n.js',this);\n
+Action.c(69):     \n
+Action.c(69):       ProdPerfectKeen.ready(function () {\n
+Action.c(69):         var client = new ProdPerfectKeen({\n
+Action.c(69):           projectId: "lXviifSA1NskA4wsG9N6WoWg",\n
+Action.c(69):           writeKey: "8RWMCGFX4X0IRY1GHWDM3HM5WDSJF9LP62BSDULOL3XK7WAIFGDB7EU526O1A0UPLH1S8SJP3
+Action.c(69):     20LUXJKCHLJX1822GU1KFE80CNW6PXVZ83IOO6LJ731EN164IFVUFMC8DOGYP2MXHN47WGVB192F2PTQRQXCF95OJW
+Action.c(69):     AKGOH9S69DZAI5OPJW8QSPDE6LQQ9",\n
+Action.c(69):           requestType: "beacon",\n
+Action.c(69):           host: "blazemeter.datapipe.prodperfect.com/v1",\n
+Action.c(69):         });\n
+Action.c(69):         client.extendEvents({\n
+Action.c(69):           visitor: {\n
+Action.c(69):             user_id: null,\n
+Action.c(69):           },\n
+Action.c(69):         });\n
+Action.c(69):     \n
+Action.c(69):         var options = {\n
+Action.c(69):           ignoreDisabledFormFields: false,\n
+Action.c(69):           recordClicks: true,\n
+Action.c(69):           recordFormSubmits: true,\n
+Action.c(69):           recordInputChanges: true,\n
+Action.c(69):           recordPageViews: true,\n
+Action.c(69):           recordPageUnloads: true,\n
+Action.c(69):           recordScrollState: true,\n
+Action.c(69):         };\n
+Action.c(69):         client.initAutoTracking(options);\n
+Action.c(69):       });\n
+Action.c(69):     </script>\n
+Action.c(69):     </body>\n
+Action.c(69):     </html>\n
+Action.c(69): web_submit_data("Choose_Flight") was successful, 2115 body bytes, 317 header bytes  	[MsgId: MMSG-26386]
+Action.c(78): Notify: Transaction "03_Choose_Flight" ended with a "Pass" status (Duration: 0.6406 Wasted Time: 0.0101).
+Action.c(87): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(87): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(91): Notify: Transaction "04_Purchase_Ticket" started.
+Action.c(93): web_submit_data("Purchase_Ticket") started  	[MsgId: MMSG-26355]
+Action.c(93): The request to server https://blazedemo.com/confirmation.php" is done with headers:
+Action.c(93):     :method = POST
+Action.c(93):     :scheme = https
+Action.c(93):     :path = /confirmation.php
+Action.c(93):     :authority = blazedemo.com
+Action.c(93):     Content-Type = application/x-www-form-urlencoded
+Action.c(93):     Cache-Control = no-cache
+Action.c(93):     Referer = https://blazedemo.com/purchase.php
+Action.c(93):     User-Agent = Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+Action.c(93):     Accept-Encoding = gzip, deflate
+Action.c(93):     Accept = */*
+Action.c(93):     content-length = 170
+Action.c(93): t=37246ms: 317-byte response headers for "https://blazedemo.com/confirmation.php" (RelFrameId=1, Internal ID=4)
+Action.c(93):     HTTP/2.0 200\r\n
+Action.c(93):     Status: 200\r\n
+Action.c(93):     x-powered-by: PHP/7.4.30\r\n
+Action.c(93):     cache-control: no-cache, private\r\n
+Action.c(93):     vary: Accept-Encoding\r\n
+Action.c(93):     content-type: text/html; charset=UTF-8\r\n
+Action.c(93):     content-encoding: gzip\r\n
+Action.c(93):     x-cloud-trace-context: 9d8573bca533e7dadeadff8010c131d7\r\n
+Action.c(93):     date: Sat, 21 Feb 2026 03:16:50 GMT\r\n
+Action.c(93):     server: Google Frontend\r\n
+Action.c(93):     content-length: 1924\r\n
+Action.c(93):     \r\n
+Action.c(93): t=37249ms: 1398-byte ENCODED response body received for "https://blazedemo.com/confirmation.php" (RelFrameId=1, Internal ID=4)
+Action.c(93): t=37250ms: 4535-byte DECODED response body for "https://blazedemo.com/confirmation.php" (RelFrameId=1, Internal ID=4)
+Action.c(93):     <!doctype html>\n
+Action.c(93):     <html lang="en">\n
+Action.c(93):     <head>\n
+Action.c(93):         <meta charset="utf-8">\n
+Action.c(93):         <title>BlazeDemo Confirmation</title>\n
+Action.c(93):         <meta name="description" content="BlazeMeter demo app">\n
+Action.c(93):         <meta name="sage" content="flights app">\n
+Action.c(93):     \n
+Action.c(93):         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script
+Action.c(93):     >\n
+Action.c(93):         <script src="/assets/bootstrap.min.js"></script>\n
+Action.c(93):         <script src="/assets/bootstrap-table.js"></script>\n
+Action.c(93):         <link href="/assets/bootstrap.min.css" rel="stylesheet" media="screen">\n
+Action.c(93):         <link href="/assets/bootstrap-table.css" rel="stylesheet" media="screen">\n
+Action.c(93):         <style type="text/css">\n
+Action.c(93):             body {\n
+Action.c(93):                 background: #f5f5f5);\n
+Action.c(93):             }\n
+Action.c(93):     \n
+Action.c(93):             .hero-unit {\n
+Action.c(93):                 background-color: #fff;\n
+Action.c(93):             }\n
+Action.c(93):     \n
+Action.c(93):             .center {\n
+Action.c(93):                 display: block;\n
+Action.c(93):                 margin: 0 auto;\n
+Action.c(93):             }\n
+Action.c(93):         </style>\n
+Action.c(93):     </head>\n
+Action.c(93):     <body>\n
+Action.c(93):         <div class="navbar navbar-inverse">\n
+Action.c(93):             <div class="navbar-inner">\n
+Action.c(93):                 <div class="container">\n
+Action.c(93):                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collaps
+Action.c(93):     e">\n
+Action.c(93):                         <span class="icon-bar"></span>\n
+Action.c(93):                         <span class="icon-bar"></span>\n
+Action.c(93):                         <span class="icon-bar"></span>\n
+Action.c(93):                     </a>\n
+Action.c(93):                     <a class="brand" href="index.php">Travel The World</a>\n
+Action.c(93):                     <a class="brand" href="home">home</a>\n
+Action.c(93):                 </div>\n
+Action.c(93):             </div>\n
+Action.c(93):         </div>\n
+Action.c(93):     <div class="container">\n
+Action.c(93):             <div class="container hero-unit">\n
+Action.c(93):             <h1>Thank you for your purchase today!</h1>\n
+Action.c(93):             <table class="table">\n
+Action.c(93):                 <thead>\n
+Action.c(93):                 <tr>\n
+Action.c(93):                     <th>&nbsp;</th>\n
+Action.c(93):                     <th>&nbsp;</th>\n
+Action.c(93):                 </tr>\n
+Action.c(93):                 </thead>\n
+Action.c(93):                 <tbody>\n
+Action.c(93):                                 <tr>\n
+Action.c(93):                         <td>Id</td>\n
+Action.c(93):                         <td>1771643810844</td>\n
+Action.c(93):                     </tr>\n
+Action.c(93):                     <tr>\n
+Action.c(93):                         <td>Status</td>\n
+Action.c(93):                         <td>PendingCapture</td>\n
+Action.c(93):                     </tr>\n
+Action.c(93):                     <tr>\n
+Action.c(93):                         <td>Amount</td>\n
+Action.c(93):                         <td>555 USD</td>\n
+Action.c(93):                     </tr>\n
+Action.c(93):                     <tr>\n
+Action.c(93):                         <td>Card Number</td>\n
+Action.c(93):                         <td>xxxxxxxxxxxx1111</td>\n
+Action.c(93):                     </tr>\n
+Action.c(93):                     <tr>\n
+Action.c(93):                         <td>Expiration</td>\n
+Action.c(93):                         <td>11\n
+Action.c(93):                             /2018</td>\n
+Action.c(93):                     </tr>\n
+Action.c(93):                     <tr>\n
+Action.c(93):                         <td>Auth Code</td>\n
+Action.c(93):                         <td>888888</td>\n
+Action.c(93):                     </tr>\n
+Action.c(93):                                         <tr>\n
+Action.c(93):                     <td>Date</td>\n
+Action.c(93):                     <td>Sat, 21 Feb 2026 03:16:50 +0000</td>\n
+Action.c(93):                 </tr>\n
+Action.c(93):                 </tbody>\n
+Action.c(93):             </table>\n
+Action.c(93):             <br/>\n
+Action.c(93):             <pre>\n
+Action.c(93):     {\n
+Action.c(93):         &quot;id&quot;: &quot;1771643810844&quot;,\n
+Action.c(93):         &quot;status&quot;: &quot;PendingCapture&quot;,\n
+Action.c(93):         &quot;amount&quot;: &quot;555&quot;,\n
+Action.c(93):         &quot;currency&quot;: &quot;USD&quot;,\n
+Action.c(93):         &quot;authCode&quot;: &quot;888888&quot;,\n
+Action.c(93):         &quot;payment&quot;: {\n
+Action.c(93):             &quot;cardNumber&quot;: &quot;xxxxxxxxxxxx1111&quot;,\n
+Action.c(93):             &quot;cardExpirationMonth&quot;: &quot;11&quot;,\n
+Action.c(93):             &quot;cardExpirationYear&quot;: &quot;2018&quot;\n
+Action.c(93):         },\n
+Action.c(93):         &quot;_links&quot;: {\n
+Action.c(93):             &quot;self&quot;: {\n
+Action.c(93):                 &quot;href&quot;: &quot;https=&gt;\\/\\/sandbox.api.visa.com\\/cybersource\\/p
+Action.c(93):     ayments\\/v1\\/authorizations\\/1771643810844&quot;,\n
+Action.c(93):                 &quot;method&quot;: &quot;GET&quot;\n
+Action.c(93):             },\n
+Action.c(93):             &quot;capture&quot;: [\n
+Action.c(93):                 {\n
+Action.c(93):                     &quot;href&quot;: &quot;https=&gt;\\/\\/sandbox.api.visa.com\\/cybersource
+Action.c(93):     \\/payments\\/v1\\/authorizations\\/1771643810844\\/captures&quot;,\n
+Action.c(93):                     &quot;method&quot;: &quot;POST&quot;\n
+Action.c(93):                 }\n
+Action.c(93):             ],\n
+Action.c(93):             &quot;reversal&quot;: [\n
+Action.c(93):                 {\n
+Action.c(93):                     &quot;href&quot;: &quot;https=&gt;\\/\\/sandbox.api.visa.com\\/cybersource
+Action.c(93):     \\/payments\\/v1\\/authorizations\\/1771643810844\\/reversals&quot;,\n
+Action.c(93):                     &quot;method&quot;: &quot;POST&quot;\n
+Action.c(93):                 }\n
+Action.c(93):             ]\n
+Action.c(93):         }\n
+Action.c(93):     }\n
+Action.c(93):     </pre>\n
+Action.c(93):             <br/>\n
+Action.c(93):         </div>\n
+Action.c(93):     </div>\n
+Action.c(93):     \n
+Action.c(93):     <!-- ProdPerfect script: last thing before the body closes -->\n
+Action.c(93):     <script>\n
+Action.c(93):     !function(name,path,ctx){\n
+Action.c(93):         var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{rea
+Action.c(93):     dy:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('s
+Action.c(93):     cript'),w=window,loaded;s.onload=s.onreadystatechange=function(){if((s.readyState&&!(/^c|l
+Action.c(93):     oade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;lat
+Action.c(93):     est=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=l
+Action.c(93):     atest;ctx[name].ready(fn)};s.async
+Action.c(93): t=37267ms: 526-byte ENCODED response body received for "https://blazedemo.com/confirmation.php" (RelFrameId=1, Internal ID=4)
+Action.c(93): t=37267ms: 962-byte DECODED response body for "https://blazedemo.com/confirmation.php" (RelFrameId=1, Internal ID=4)
+Action.c(93):     =1;s.src=path;h.appendChild(s)}}\n
+Action.c(93):       }('ProdPerfectKeen','https://blazemeter.trackinglibrary.prodperfect.com/keen-tracking.mi
+Action.c(93):     n.js',this);\n
+Action.c(93):     \n
+Action.c(93):       ProdPerfectKeen.ready(function () {\n
+Action.c(93):         var client = new ProdPerfectKeen({\n
+Action.c(93):           projectId: "lXviifSA1NskA4wsG9N6WoWg",\n
+Action.c(93):           writeKey: "8RWMCGFX4X0IRY1GHWDM3HM5WDSJF9LP62BSDULOL3XK7WAIFGDB7EU526O1A0UPLH1S8SJP3
+Action.c(93):     20LUXJKCHLJX1822GU1KFE80CNW6PXVZ83IOO6LJ731EN164IFVUFMC8DOGYP2MXHN47WGVB192F2PTQRQXCF95OJW
+Action.c(93):     AKGOH9S69DZAI5OPJW8QSPDE6LQQ9",\n
+Action.c(93):           requestType: "beacon",\n
+Action.c(93):           host: "blazemeter.datapipe.prodperfect.com/v1",\n
+Action.c(93):         });\n
+Action.c(93):         client.extendEvents({\n
+Action.c(93):           visitor: {\n
+Action.c(93):             user_id: null,\n
+Action.c(93):           },\n
+Action.c(93):         });\n
+Action.c(93):     \n
+Action.c(93):         var options = {\n
+Action.c(93):           ignoreDisabledFormFields: false,\n
+Action.c(93):           recordClicks: true,\n
+Action.c(93):           recordFormSubmits: true,\n
+Action.c(93):           recordInputChanges: true,\n
+Action.c(93):           recordPageViews: true,\n
+Action.c(93):           recordPageUnloads: true,\n
+Action.c(93):           recordScrollState: true,\n
+Action.c(93):         };\n
+Action.c(93):         client.initAutoTracking(options);\n
+Action.c(93):       });\n
+Action.c(93):     </script>\n
+Action.c(93):     </body>\n
+Action.c(93):     </html>\n
+Action.c(93): Registered web_reg_find successful for "Text=Thank you for your purchase today!" (count=1)  	[MsgId: MMSG-26364]
+Action.c(93): Notify: Saving Parameter "PurchaseCheck = 1".
+Action.c(93): web_submit_data("Purchase_Ticket") was successful, 1924 body bytes, 317 header bytes  	[MsgId: MMSG-26386]
+Action.c(110): Notify: Parameter Substitution: parameter "PurchaseCheck" =  "1"
+Action.c(111): Notify: Transaction "04_Purchase_Ticket" ended with a "Pass" status (Duration: 2.5683 Wasted Time: 0.0103).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

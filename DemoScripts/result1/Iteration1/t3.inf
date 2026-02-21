@@ -1,0 +1,13 @@
+[t3]
+SnapshotXmlFile=snapshot_3.xml
+ContentType=text/html
+StepName=Submit Data: Choose_Flight
+Total=1
+FileName1=t3.html
+RequestHeaderFile=t3_RequestHeader.txt
+ResponseHeaderFile=t3_ResponseHeader.txt
+RawStepEndTime=0
+RawStepName=Choose_Flight
+RequestBodyFile=t3_RequestBody.txt
+RawStepStartTime=1771644269089
+URL1=https://blazedemo.com/purchase.php

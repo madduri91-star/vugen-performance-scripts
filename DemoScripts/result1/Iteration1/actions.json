@@ -1,0 +1,61 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: Open_HomePage",
+                "infFile": "t1.inf",
+                "time": 1771644267056
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: Find_Flights",
+                "infFile": "t2.inf",
+                "time": 1771644269024
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: Choose_Flight",
+                "infFile": "t3.inf",
+                "time": 1771644270962
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: Purchase_Ticket",
+                "infFile": "t4.inf",
+                "time": 1771644279711
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "01_Open_HomePage",
+                "rawStartTime": 1771644266094,
+                "rawEndTime": 1771644267083,
+                "thinkTime": 0.0,
+                "wastedTime": 0.13686728477478028
+            },
+            {
+                "transactionName": "02_Find_Flights",
+                "rawStartTime": 1771644267114,
+                "rawEndTime": 1771644269041,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011109113693237305
+            },
+            {
+                "transactionName": "03_Choose_Flight",
+                "rawStartTime": 1771644269073,
+                "rawEndTime": 1771644270978,
+                "thinkTime": 0.0,
+                "wastedTime": 0.007987737655639649
+            },
+            {
+                "transactionName": "04_Purchase_Ticket",
+                "rawStartTime": 1771644279221,
+                "rawEndTime": 1771644279753,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011112451553344727
+            }
+        ]
+    }
+]

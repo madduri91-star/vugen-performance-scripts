@@ -1,0 +1,1 @@
+-usr "C:\Users\Anil\Documents\VuGen\Scripts\DemoScripts\DemoScripts.usr" -compile_only -out "C:\Users\Anil\Documents\VuGen\Scripts\DemoScripts\" -drv_log_file "C:\Users\Anil\Documents\VuGen\Scripts\DemoScripts\mdrv.log" -cfg "C:\Users\Anil\Documents\VuGen\Scripts\DemoScripts\default.cfg" -product_name vugen
